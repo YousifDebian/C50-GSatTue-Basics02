@@ -165,11 +165,21 @@
 
             /* Q14. Using title from the previous question, use ?? to print "Untitled" if title is null. Then use ??= to
                 assign title the value "Untitled" only if it's still null. */
-            
-            Book? book = null;
-            Console.WriteLine(book?.Title ?? "Untitled");
-            book?.Title ??= "Untitled";
-            Console.WriteLine(book?.Title);
+
+            //Book? book = null;
+            //Console.WriteLine(book?.Title ?? "Untitled");
+            //book?.Title ??= "Untitled";
+            //Console.WriteLine(book?.Title);
+
+            #endregion
+
+            #region Question 15
+
+            /* Q15. Given string? name = "Ahmed"; (you are sure it's not null here), assign it to a non-nullable string
+                confirmedName using the ! operator. */
+
+            string? name = "Ahmed";
+            string confirmedName = name!;
 
             #endregion
         }
